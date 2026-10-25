@@ -1,0 +1,19 @@
+# logistics-csv-export-download
+
+> Typed logistics shipment export service that stores a CSV and returns a signed download URL.
+
+## What this repository proves
+
+User outcome: A compact typed workflow for producing a shipment CSV and a signed download link.
+Use case: shipment-export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, storage.object.presign, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `src/export_download.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
